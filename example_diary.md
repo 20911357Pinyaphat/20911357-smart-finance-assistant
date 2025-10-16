@@ -169,8 +169,60 @@ Use this format for consistent diary entries:
 
 **Reflection:** [What you learned about AI collaboration, business programming, or problem-solving]
 ```
+Entry [1] – [Sample Transaction setup]
+Context: [One sentence: sample transaction setup for my project]
+<img width="1045" height="768" alt="image" src="https://github.com/user-attachments/assets/899363e5-72e8-438a-8d6a-342d8e0a6ce7" />
 
+My Prompt: "[will you be able to help me create or load sample transaction data in python to work with let's say im creating a program where all shopaholic people can track their recurring payments such as spotify, netflix, gym and stuff. Make it realistic and based on Australian users]"
+
+AI Response Summary: [yes and it gives me and ideas for expansions]
+
+My Critique/Improvement: [i double-checked to see if the given lists are realistic]
+
+Result: [i made a few adjustments to match the sample transaction example]
+
+Reflection: [it is very useful]
 ---
 
 ✅ **Remember**: Document your AI collaboration throughout your project development. Each entry should show learning and improvement, not just successful interactions. Show how you direct AI like a junior developer to create business-appropriate solutions.
+Entry [2] – [psuedocode step 3]
+<img width="853" height="747" alt="image" src="https://github.com/user-attachments/assets/46449f22-c27c-45be-b1f5-faadb0944e40" />
+Context: [learning 3 scenarios based on the situation of my planned program]
 
+My Prompt: "[can you give me 3 realistic examples of australian transaction data with different scenarios for recurring payments. show me how to manually calculate meaningful financial insights from each scenarios from like very bad on budget to being cautious with the budget and subscriptions haha]"
+
+AI Response Summary: [Absolutely — let’s walk through three realistic Australian transaction scenarios for recurring payments, each with a different financial mindset: from overspending to cautious budgeting. I’ll show you how to manually calculate meaningful insights like total monthly spend, percentage of income spent on subscriptions, and whether the user is financially overextended.]
+
+My Critique/Improvement: [i adapted with my theories]
+
+Result: [i used AI suggestions for step 3]
+
+Reflection: [AI helped with decision-making]
+Entry [3] – [Step 6]
+Artifact: [Today will you be able to help me create or load sample transaction data in python to work with let's say im creating a program where all shopaholic people can track their recurring payments such as spotify, netflix, gym and stuff. Make it realistic and based on Australian users Absolutely! Here's a realistic sample of how you could create or load recurring transaction data in Python for Australian users. This mock dataset includes common subscriptions and payment details tailored to an Aussie context.]
+
+Context: [step 6 using ai promtps]
+
+My Prompt: "[Good job! now "I'm implementing a Smart Finance Assistant. Based on my pseudocode, please create a Python function for recurring subscription transactions. The code should: - Handle real-world CSV data issues (dollar signs, missing values) - Include clear comments explaining business logic - Use professional variable names - Format output for business presentation - Include basic error handling" before answer me this... what specific functionality are we using in this case]"
+
+AI Response Summary: [AI wrote me a code]
+
+My Critique/Improvement: [im gonna try to adapt to my version]
+
+Result: [my full code which is not done yet but SOON]
+
+Reflection: [a brief code but i think i can make it better]
+
+Entry [4] – [load and cleand CSV] Artifact: [Today will you be able to help me create or load sample transaction data in python to work with let's say im creating a program where all shopaholic people can track their recurring payments such as spotify, netflix, gym and stuff. Make it realistic and based on Australian users Absolutely! Here's a realistic sample of how you could create or load recurring transaction data in Python for Australian users. This mock dataset includes common subscriptions and payment details tailored to an Aussie context.]
+<img width="840" height="686" alt="image" src="https://github.com/user-attachments/assets/06531b09-ea77-4750-b5c4-eae2a3f07891" />
+Context: [ai collaboration for transaction data]
+
+My Prompt: "[thank you very much! i just realise that i have to create a lot of stuff onto my starter notebook. lets start with the load and clean transaction data for my program. would u be able to help me create a function to load CSV transaction data including all the stuff we need if you remember on my pseducode. for example like date, amount, category, description columns, handle dolla signs in amount, missing values, and data validation includes the clear friendly girly error messages Args: file_path: Path to CSV file or file object Returns: pandas.DataFrame: Cleaned transaction data]"
+
+AI Response Summary: [AI wrote me a code]
+
+My Critique/Improvement: [im gonna try to adapt to my version]
+
+Result: [my full code which is not done yet but SOON]
+
+Reflection: [a brief code but i think i can make it better]
