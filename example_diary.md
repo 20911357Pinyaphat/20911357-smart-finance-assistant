@@ -226,3 +226,89 @@ My Critique/Improvement: [im gonna try to adapt to my version]
 Result: [my full code which is not done yet but SOON]
 
 Reflection: [a brief code but i think i can make it better]
+### Entry [5] – [business insights generator]
+**Artifact:** [<img width="810" height="622" alt="image" src="https://github.com/user-attachments/assets/64881969-1729-445b-b271-70eaf1e02061" />
+]
+
+**Context:** [Oasking ai for financial recommendations]
+
+**My Prompt:** "[thank you! can you please help me create a function that analyses spending by category, calculates percentages, identifies if theres any subscriptions thats unneccessary and generates actionable financial insights formatted for girls if they spend too much on recurring payments? if theres any tips about how they can save up more like subscribe yearly instead of monthly? some of the platforms are cheaper when subscribe in bundles? using this format Args: df: Cleaned transaction DataFrame Returns: dict: Analysis results and insights]"
+
+**AI Response Summary:** [AI helped me write the code for this step by step]
+
+**My Critique/Improvement:** [I checked the error and edited it myself]
+
+**Result:** [AI came up with recommendations]
+
+**Reflection:** [Whait is very smart]
+```
+### Entry [6] – [chat interface integration]
+**Artifact:** [<img width="783" height="517" alt="image" src="https://github.com/user-attachments/assets/55df0bd6-2e50-41ad-a6c7-e3dd6fd3b960" />
+]
+
+**Context:** [AI helped me with the hands-on AI]
+
+**My Prompt:** "[good job! now can you help me write a system for a friendly, girly, but also professional financial advisor chatbot that can provide spending advice based on transaction analysis? i want the chatbot to be like girls talking to girls but still encouraging but practical]"
+
+**AI Response Summary:** [AI helped me write the code but it seems like there was the function that wasn't defined]
+
+**My Critique/Improvement:** [I double-checked why this code was an error and fixed it]
+
+**Result:** [the results after i ran the system looked fine]
+
+**Reflection:** [i used my problem solving skill with this one]
+### Entry [7] – [RAG system]
+**Artifact:** [<img width="841" height="488" alt="image" src="https://github.com/user-attachments/assets/966e23c8-476e-413b-ae0f-8daa892fafe8" />
+]
+
+**Context:** [explanation about RAG and code]
+
+**My Prompt:** "[yay okay! now would you be able to help me with RAG system for financial documents for retrieval setup? please include the information from financial documents, budgeting guides, and transaction summaries but based on our recurring subscription and please make sure it answer user questions about personal finance and if we can recommend them about their shopping/ spending ideas]"
+
+**AI Response Summary:** [RAG explanation and code]
+
+**My Critique/Improvement:** [We were trying to fix an error multiple times]
+
+**Result:** [with the right prompts AI eventually gave me the perfect code]
+
+**Reflection:** [problem solving]
+```
+### Entry [8] – [custom financial tools]
+**Artifact:** [<img width="740" height="544" alt="image" src="https://github.com/user-attachments/assets/9309a850-9b6e-4538-8784-559a20ca2319" />
+]
+
+**Context:** [asking AI to help creating useful financial calculators]
+
+**My Prompt:** "[thats cool! now do you think you can help me write a custom saving goal calculator as an agen tool that has the function that maybe have the bonus function where we can help the user tracking their goals and see if the recurring subscription is overspending in case we can cut some services off and calculates time to reach goal like lets say set the priority what recurring subscription is okay to subscribe and which one is unnecessary using from hands_on_ai import agent def create_savings_calculator_tool():]"
+
+**AI Response Summary:** [ai helped writing the code with suggestions]
+
+**My Critique/Improvement:** [there was some errors but i fixed it]
+
+**Result:** [it looked fine]
+
+**Reflection:** [business programming]
+### Entry [9] – [Gradio UI]
+**Artifact:** [<img width="777" height="624" alt="image" src="https://github.com/user-attachments/assets/ad1d260d-64a0-45d9-8506-6e36d7592b8c" />
+]
+
+**Context:** [making ui by graio]
+
+**My Prompt:** "[alright now lets do gradio UI! do you think you can help me design a gradio interface using V that can combines CSV uplaod, spending analysis, chat functionality, and custom tools in a user-friendly layout suitable for a personal finance application? i want it in pink and pastel and to # Launch your complete application # demo = create_finance_assistant_ui() # demo.launch()]"
+
+**AI Response Summary:** [Updated Gradio UI Plan
+We’ll add:
+
+User Info Section: Name + Bot name
+
+Manual Transaction Entry: Add rows to a live DataFrame
+
+Chat + Analysis: Personalized responses using entered data
+
+Savings Calculator: Based on real-time inputs]
+
+**My Critique/Improvement:** [i tried the UI and i noticed there were so many things that need improvement which i need to see what i can do with it]
+
+**Result:** [i used the given code for starter notebook  but for my actual project i think i can do better]
+
+**Reflection:** [ai can give us the brief code and we might have to make adjustments]
