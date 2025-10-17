@@ -14956,5 +14956,46 @@ Let me know if you want to add a sparkle animation when reset completes or a “
 Edit in a page
 
 
+instead of using the calandar cant this agent track our spending breakdown instead of
+Yes, ime 💖 — you can absolutely use an agent-style tool to track your spending breakdown instead of relying on a separate calendar view. In fact, this would make your chatbot smarter and more intuitive by letting users ask things like:
+“How much am I spending on subscriptions this month?”
+“Am I over budget?”
+“Which category is costing me the most?”
+“Show me my top 3 spenders”
+Instead of manually clicking buttons, the agent would interpret the message and route it to the correct logic — like calculate_spending(), plot_spending(), or even generate_cut_suggestions().
+✅ How to Replace Calendar View with Agent Spending Tracker
+Step 1: Create an Agent Dispatcher
+python
+def agent_dispatcher(user_message, selected_services, avatar):
+    message = user_message.lower()
+    all_services = selected_services + manual_services
 
+    if "spending" in message or "breakdown" in message:
+        return calculate_spending(all_services)
+    elif "graph" in message or "visualize" in message:
+        fig, summary, sparkle = plot_spending(all_services)
+        return f"{summary}\n\n{sparkle}"
+    elif "cut" in message or "cancel" in message:
+        return generate_cut_suggestions(all_services)
+    elif "goal" in message or "save" in message:
+        return budget_babe_chat(user_message, all_services, avatar)
+    else:
+        return "🤖 I'm not sure what you need — try asking about spending, cuts, goals, or graphs!"
+Step 2: Wire It to Your Chatbot
+python
+gr.Button("Ask Budget Babe AI").click(
+    fn=lambda *args: agent_dispatcher(args[-2], collect_selected(*args), args[-1]),
+    inputs=list(checkbox_groups.values()) + [chat_input, avatar_dropdown],
+    outputs=chatbot_output
+)
+💖 What You Gain
+One smart chatbot that handles spending breakdown, graphs, goals, and cut suggestions
+No need for separate calendar logic unless you want renewal dates
+Cleaner UI and more natural user experience
+✨ Want to Expand It?
+You could add:
+“Show me my top 3 spenders”
+“How much am I spending on food vs fitness?”
+“What’s my sparkle score this month?”
+Let me know if you want to build a full intent parser or add emoji-based responses next 💅
 
