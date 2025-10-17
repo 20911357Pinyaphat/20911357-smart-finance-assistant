@@ -1,26 +1,93 @@
 
 Date,Amount,Description
-2025-10-01,$16.99,Netflix Australia
-2025-10-02,$11.99,Spotify Premium
-2025-10-03,$45.00,Anytime Fitness Perth
-2025-10-04,$14.99,Apple Music
-2025-10-05,$9.99,Paramount+
-2025-10-06,$19.99,Audible Membership
-2025-10-07,$29.99,Stan Subscription
-2025-10-08,$39.00,ClassPass Monthly
-2025-10-09,$18.99,Canva Pro
-2025-10-10,$50.00,Telstra NBN Plan
-2025-10-11,$13.99,YouTube Premium
-2025-10-12,$80.00,HelloFresh Weekly
-2025-10-13,$12.99,Disney+
-2025-10-14,$9.99,Kindle Unlimited
-2025-10-15,$59.00,Adobe Creative Cloud
-2025-10-16,$6.99,Scribd
-2025-10-17,$25.00,Uber Monthly Pass
-2025-10-18,$49.99,Microsoft 365 Family Plan
-2025-10-19,$10.00,Opal Card Recharge
-2025-10-20,$89.00,Marley Spoon Weekly Box
-2025-10-21,$15.00,Notion Pro
-2025-10-22,$39.99,Foxtel Now
-2025-10-23,$5.99,Fuel Map Pro
-2025-10-24,$7.99,Get Reminded Premium
+2025-10-01,-15.99,Netflix
+2025-10-01,-11.99,Spotify
+2025-10-01,-13.99,Disney+
+2025-10-01,-10.00,Binge
+2025-10-01,-6.99,Amazon Prime Video
+2025-10-01,-9.99,Apple TV+
+2025-10-01,-25.00,Kayo Sports
+2025-10-01,-12.99,Apple Music
+2025-10-01,-11.99,YouTube Music
+2025-10-01,-13.99,Tidal
+2025-10-01,-39.00,ClassPass
+2025-10-01,-29.99,Les Mills+
+2025-10-01,-29.99,Centr by Chris Hemsworth
+2025-10-01,-19.99,Sweat App
+2025-10-01,-65.00,Anytime Fitness
+2025-10-01,-9.69,Revo Fitness
+2025-10-01,-60.00,Virgin Active
+2025-10-01,-55.00,Fitness First
+2025-10-01,-65.00,F45 Training
+2025-10-01,-12.99,Headspace
+2025-10-01,-14.99,Calm App
+2025-10-01,-16.45,Audible
+2025-10-01,-13.99,Kindle Unlimited
+2025-10-01,-14.99,Scribd
+2025-10-01,-25.00,MasterClass
+2025-10-01,-59.00,Coursera Plus
+2025-10-01,-19.00,The Economist Digital
+2025-10-01,-15.00,NY Times Digital
+2025-10-01,-12.99,Blinkist
+2025-10-01,-7.00,Medium Membership
+2025-10-01,-10.00,The Guardian Australia
+2025-10-01,-89.99,HelloFresh
+2025-10-01,-84.99,Marley Spoon
+2025-10-01,-69.99,Dinnerly
+2025-10-01,-25.00,Thieves Coffee
+2025-10-01,-39.00,Cheese Therapy
+2025-10-01,-29.95,GoodnessMe Box
+2025-10-01,-26.95,The Vegan Box
+2025-10-01,-49.00,Wine Selectors
+2025-10-01,-59.00,Beer Cartel
+2025-10-01,-24.99,Snack Surprise
+2025-10-01,-6.99,Amazon Prime
+2025-10-01,-4.99,eBay Plus
+2025-10-01,-3.99,The Iconic Unlimited
+2025-10-01,-6.50,Catch Club
+2025-10-01,-5.99,Kogan First
+2025-10-01,-4.00,JB Hi-Fi Perks
+2025-10-01,-19.00,Coles Plus
+2025-10-01,-15.00,Woolworths Delivery Unlimited
+2025-10-01,-3.99,Big W VIP
+2025-10-01,-29.95,Nourish Beauty Box
+2025-10-01,-39.95,Retreat Yourself
+2025-10-01,-22.95,Bellabox
+2025-10-01,-24.99,LustBox
+2025-10-01,-27.95,The Natural Box
+2025-10-01,-29.99,The Man Box
+2025-10-01,-25.00,EcoBox
+2025-10-01,-49.00,The Local Drop
+2025-10-01,-34.99,TheraBox
+2025-10-01,-19.99,MindBox
+2025-10-01,-79.00,Telstra NBN
+2025-10-01,-75.00,Optus NBN
+2025-10-01,-70.00,Vodafone NBN
+2025-10-01,-69.00,Aussie Broadband
+2025-10-01,-64.99,TPG Internet
+2025-10-01,-25.00,Belong Mobile
+2025-10-01,-30.00,Amaysim Mobile
+2025-10-01,-20.00,Boost Mobile
+2025-10-01,-59.99,iiNet Internet
+2025-10-01,-65.00,Exetel NBN
+2025-10-01,-17.99,Canva Pro
+2025-10-01,-29.99,Adobe Creative Cloud
+2025-10-01,-10.99,Microsoft 365
+2025-10-01,-8.00,Notion AI
+2025-10-01,-12.00,Grammarly Premium
+2025-10-01,-15.00,Dropbox Plus
+2025-10-01,-2.49,Google One
+2025-10-01,-9.99,Evernote Premium
+2025-10-01,-20.99,Zoom Pro
+2025-10-01,-4.99,Todoist Premium
+2025-10-01,-15.95,Xbox Game Pass
+2025-10-01,-11.95,PlayStation Plus
+2025-10-01,-5.95,Nintendo Switch Online
+2025-10-01,-9.99,Steam Deck Subscription
+2025-10-01,-6.99,EA Play
+2025-10-01,-19.99,Ubisoft+
+2025-10-01,-7.99,Apple Arcade
+2025-10-01,-7.99,Google Play Pass
+2025-10-01,-12.99,GeForce NOW
+2025-10-01,-9.99,Crunchyroll Premium
+
