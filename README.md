@@ -1,6 +1,6 @@
 # 📊 Smart Finance Assistant – Student Project Template
 
-Welcome to your project repository for the **ISYS2001 Final Programming Project**. This repo provides a starting point for building your **Smart Finance Assistant**.
+Welcome to my project repository for the **ISYS2001 Final Programming Project**. This repo will explain how my project does and the instructions to run the notebook **Smart Finance GIRLY Assistant**.
 
 ---
 
