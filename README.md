@@ -4,73 +4,50 @@ Welcome to my project repository for the **ISYS2001 Final Programming Project**.
 
 ---
 
-## 📖 Project Overview
-In this project, you will design and implement a **Smart Finance Assistant** using:
-- Python (Google Colab)
-- [hands-on-ai](https://pypi.org/project/hands-on-ai/) (chat, RAG, agent tools)
-- [Gradio](https://www.gradio.app/) (to create a simple app interface)
+**💖 Budget Babe: Your Friendly Financial Assistant**
+Budget Babe is a joyful, intuitive financial assistant designed to help users track subscriptions, analyze spending, and reach savings goals — all with a touch of sparkle ✨. Built with Gradio and pandas, it blends smart logic with a girly, empowering interface that makes budgeting feel fabulous.
+💼 What Budget Babe Does
+- 🎯 Tracks monthly and yearly spending across popular subscription categories
+- 📊 Shows savings progress with a visual progress bar and milestone badges
+- 💬 Offers personalized financial advice through a chatbot-style assistant ("The    Financial Sage")
+- 🧁 Lets users add custom services and spending manually
+- ✨ Highlights expensive subscriptions and suggests cuts
+- 🎀 Designed with emoji, markdown, and playful UI elements for a delightful          experience
+- 📝 Sample Inputs & Outputs
 
-Your Assistant should include:
-- **Chat**: a finance-oriented personality bot
-- **RAG**: retrieval from CSV or other documents
-- **Agent Tool**: one custom tool (e.g., budget calculator, currency converter)
-- **Gradio UI**: a simple interface tying everything together
-- **Tests**: a Testing Section in your notebook
-
----
+✅ Selecting Subscriptions
+- Input: User selects Netflix, Spotify, and Gym from checkbox groups.
+- Output:
+     - Monthly total: $76.98
+     - Yearly total: $923.76
+      - Sparkle Score: 7/10
+      - Advice: “💖 You’re doing great! Consider cutting one high-cost item to             boost savings.”
 
 ## 📂 Suggested Repo Layout
-You may adapt this structure or create your own. Clarity and organisation are graded in the rubric.
 
 ```
 /README.md            ← this file
-/assignment.pdf       ← official assignment specification
+/Projects/
+   /assignment.pdf    ← official assignment specification
+   /Smart-assistance-for-girlys.ipynb       
 /starter_notebook.ipynb  ← scaffold notebook with six-step method
-/example_diary.md     ← sample Developer’s Diary entries
+/diary/               ← week 8-12 entries
+   /example_diary.md     ← sample Developer’s Diary entries
+   /week ...
 /data/                ← your CSVs or sample datasets
-/tests/               ← your test scripts or asserts
-/ai-conversations/    ← weekly AI Evidence Packages (screenshots, notes)
-/docs/                ← pseudocode, design notes, planning docs
+/ai-conversations/    ← conversations with AI regarding the project
+
 ```
 
 ---
+**🚀 How to Run the Notebook**
+1. open the projects folder
+2. go to projects file
+3. run the colab
+4. try out the gradio
+5. enjoy!
 
-## 🚀 Getting Started
-1. Open the `starter_notebook.ipynb` in Google Colab.
-2. Follow the **six-step methodology**:
-   1. Understand the problem
-   2. Identify inputs and outputs
-   3. Work the problem by hand
-   4. Write pseudocode
-   5. Convert to Python
-   6. Test with a variety of data
-3. Add at least one **meaningful GitHub commit per week** (Weeks 8–12).
-4. Document AI use in your **Developer’s Diary** (`/ai-conversations/` folder or a markdown file).
-
----
-
-## ✅ Submission Requirements
-- Colab Notebook with full project implementation
-- GitHub repository with:
-  - Notebook, README, and Developer’s Diary
-  - Weekly AI Evidence Packages (Weeks 8–12)
-  - Meaningful commit history
-- Developer’s Diary entries that include:
-  - **Artifact**: screenshot or snippet of AI use
-  - **Context**: your goal
-  - **Reflection**: what worked, what didn’t, what you learned
-
----
-
-## 📊 Assessment Criteria (Summary)
-- **Functionality** – chatbot, RAG, tool, and UI integrated (30%)
-- **Testing & Debugging** – clear tests, meaningful edge cases (20%)
-- **AI Collaboration & Progress** – AI evidence + weekly commits (20%)
-- **Business Relevance** – meaningful finance problem (15%)
-- **Clarity & Reflection** – repo organisation, README, diary (15%)
-
-For the full rubric, see `assignment.pdf`.
-
+ps. i am not sure if this is how to do this project please be nice to me as this is my first and only coding and i spent more than 60 hours on this unit with 60 hours fortnight job and full time study... i tried my best and i really hope you like it as i do enjoy my project a lot it seems like something useful for me... HAVE FUN AND I HOPE YOU HAVE A FANTASTIC DAY <3
 ---
 
 ## 📚 Resources
@@ -78,15 +55,6 @@ For the full rubric, see `assignment.pdf`.
 - **hands-on-ai Package**: [GitHub Repository](https://github.com/michael-borck/hands-on-ai)
 - **Documentation**: [DeepWiki Guide](https://deepwiki.com/michael-borck/hands-on-ai)
 - **For AI Assistants**: Share [this LLM context file](https://github.com/michael-borck/hands-on-ai/blob/main/LLM.txt) with ChatGPT/Claude/Copilot for better code suggestions
-
----
-
-## 💡 Tips
-- Keep your commits small and descriptive.
-- Use AI as a coding partner, not a crutch.
-- Remember: **undocumented AI use = misconduct**.
-
-Good luck, and have fun building your Finance Assistant! 🎉
 
 ---
 
