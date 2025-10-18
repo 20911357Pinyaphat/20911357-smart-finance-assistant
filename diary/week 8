@@ -171,3 +171,195 @@ My Critique/Improvement: [I checked the code and see what i can do to my project
 Result: [sage seems really smart]
 
 Reflection: [business programming]
+
+Entry [4] – [ask AI to help choose a stock  API]
+
+Artifact: [Based on your request for free stock APIs for learning with basic price data, here are a few options:
+Alpha Vantage: Offers a free tier with access to daily, weekly, and monthly stock data, as well as other financial data. It's a popular choice for beginners.
+Yahoo Finance (via yfinance library): While not a traditional API, the yfinance Python library allows you to easily download historical market data from Yahoo Finance.
+IEX Cloud: Provides a free tier with access to real-time and historical stock data, though the free tier has usage limits.
+Finnhub: Offers a free tier with real-time stock data, but like IEX Cloud, it has limitations on the number of calls you can make.
+For this tutorial, we will be using Alpha Vantage.]
+
+Context: [see if the examples provided will match the AI response]
+
+My Prompt: "[What are some free stock APIs I can use for learning? I want to get basic stock price data.]"
+
+AI Response Summary: [ai  gave me some free stock APIs that i can use for learning basic stock price data]
+
+My Critique/Improvement: [i was expecting for something different]
+
+Result: [i used both for maximum knowledge]
+
+Reflection: [AI is okay]
+
+Entry [5] – [Ask ai to help build the API call]
+
+Artifact: [def get_stock_data(symbol, api_key="demo"):
+    """
+    Get stock data from Alpha Vantage
+    Using 'demo' key for testing (limited data)
+    """
+
+    base_url = "https://www.alphavantage.co/query"
+
+    # Parameters for the API call
+    params = {
+        'function': 'TIME_SERIES_DAILY',
+        'symbol': symbol,
+        'apikey': api_key,
+        'outputsize': 'compact'  # Last 100 days
+    }
+
+    try:
+        response = requests.get(base_url, params=params)
+        response.raise_for_status() # Raise an exception for bad status codes
+        data = response.json()
+        return data
+    except requests.exceptions.RequestException as e:
+        print(f"Error during API call: {e}")
+        return {"error": str(e)}
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        return {"error": str(e)}
+
+
+# Test with demo data (IBM stock)
+stock_data = get_stock_data("IBM")
+print("Got data keys:", list(stock_data.keys()))
+print(stock_data.get("Information", "No 'Information' field found."))]
+
+Context: [i wanted to see if we have alternative way to build the API cell]
+
+My Prompt: "[can you help me structure the API request? will you be able to give me different code than this code below but work the same]"
+
+AI Response Summary: [AI gave me alternative code for API call]
+
+My Critique/Improvement: [now i have alternative code to stock data]
+
+Result: [the AI code looks similar to the code professor gave us]
+
+Reflection: [problem-solving]
+
+Entry [6] – [ask ai to help parse the data]
+
+Artifact: [Screenshot/code snippet/GIF of AI interaction]
+
+Context: [The output Error: No stock data found and Could not parse stock data is happening because you are currently using the default "demo" API key in the get_stock_data function call.
+
+As mentioned in the markdown cell above (cell vNWRFtgeTqmY), the "demo" API key for Alpha Vantage is very limited. It often only returns an "Information" field and not the actual stock data ("Time Series (Daily)").
+
+The parse_stock_data function specifically checks for the presence of the "Time Series (Daily)" key to determine if it received valid stock data. Since this key is missing when using the demo key, the function correctly reports that no stock data was found and cannot proceed with parsing.
+
+To get actual stock data and allow the parsing function to work, you'll need to:
+
+Sign up for a free Alpha Vantage API key at their website ([redacted link]).
+Replace "demo" with your new, real API key in the get_stock_data function call in cell gYKPAvPwRyEj.
+Once you use your real API key, the stock_data variable will contain the "Time Series (Daily)" field, and the parse_stock_data function should be able to process it successfully.]
+
+My Prompt: "[how can i convert this to a pandas data frame?]"
+
+AI Response Summary: [ai didn't really help me much with this it gave me a general summary on how to do it]
+
+My Critique/Improvement: [I put this onto my cellstock_data = get_stock_data("IBM", api_key="YOUR_REAL_KEY_HERE")
+print(stock_data.keys())]
+
+Result: [my way and the meta data is working]
+
+Reflection: [ai can only give us general summary if we gave it bad prompths]
+
+Entry [7] – [ask ai to help create a simple data]
+
+Artifact: [The notebook already contains a function called plot_stock_price in cell T3RicXXURyEp that shows you how to create a simple line chart of stock prices using pandas' built-in plotting capabilities.
+
+Here's how it works:
+
+Checks for Data: It first checks if the input DataFrame df is valid and not empty.
+Selects the 'Close' Column: df['Close'] selects the 'Close' price column from the DataFrame.
+Uses the .plot() Method: Pandas DataFrames and Series have a built-in .plot() method that uses Matplotlib behind the scenes to create visualizations. Calling .plot() on a Series (like the 'Close' column) automatically creates a line plot with the DataFrame's index (which are the dates) on the x-axis and the values of the Series (the closing prices) on the y-axis.
+Adds a Title: title=f"{symbol} Stock Price" adds a title to the plot using the stock symbol.
+Displays the Plot: .figure.show() displays the generated plot.
+The code then also prints some basic statistics (latest, high, and low prices) for the stock.
+
+So, once you have successfully parsed your stock data into the df DataFrame using the parse_stock_data function (after using a real API key), you can simply call the plot_stock_price function with your DataFrame and the stock symbol to generate the chart:
+plot_stock_price(df, "IBM")
+This will create a line chart showing the closing price of IBM over the period covered by your data.]
+
+Context: [ai didnt gave me acode that looked like the one professor gave]
+
+My Prompt: "[How do I create a simple line chart of stock prices using pandas?]"
+
+AI Response Summary: [ai said the code is done but i have to check for api key]
+
+My Critique/Improvement: [i have no idea about the ibm stock]
+
+Result: [nothing im so confused]
+
+Reflection: [i learned nothing i feel stupid and i give up]
+
+Entry [8] – [add a feature]
+
+Artifact: [import pandas as pd
+
+# Ask AI to help you add a specific feature
+# Example: "Help me add a function to calculate the RSI (Relative Strength Index)"
+
+def calculate_rsi(df, window=14):
+    """Calculate RSI based on AI suggestions"""
+    if df is None or df.empty:
+        print("No data to calculate RSI")
+        return None
+
+    # Calculate price changes
+    delta = df['Close'].diff()
+
+    # Separate gains and losses
+    gain = delta.copy()
+    loss = delta.copy()
+
+    gain[gain < 0] = 0
+    loss[loss > 0] = 0
+
+    # Calculate average gain and average loss
+    avg_gain = gain.rolling(window=window).mean()
+    avg_loss = loss.abs().rolling(window=window).mean()
+
+    # Calculate Relative Strength (RS)
+    rs = avg_gain / avg_loss
+
+    # Calculate Relative Strength Index (RSI)
+    rsi = 100 - (100 / (1 + rs))
+
+    # Add RSI as a new column to the DataFrame
+    df['RSI'] = rsi
+
+    return df
+
+# Or ask for help with alerts
+def price_alert_system(symbol, target_price, current_price):
+    """Simple price alert system"""
+
+    print("Price alert system - ask AI for implementation")
+    return None
+
+print("Choose a feature to add and ask Colab AI for help implementing it!")
+
+# Example usage (assuming you have a DataFrame 'df' from previous steps)
+# After running the cells to get and parse stock data into 'df', you can call:
+df_with_rsi = calculate_rsi(df.copy()) # Use .copy() to avoid modifying the original df
+if df_with_rsi is not None:
+    print("\n--- DataFrame with RSI Head ---")
+    print(df_with_rsi.head())
+    print("-------------------------------\n")]
+
+Context: [see if ai can help me add a feature]
+
+My Prompt: "[Help me add a function to calculate the RSI (Relative Strength Index]"
+
+AI Response Summary: [this time ai helped me transformed the code and added the RSI function]
+
+My Critique/Improvement: [i adjusted a bit and the result seemed okay]
+
+Result: [me and AI we are the best]
+
+Reflection: [AI collaboration, problem-solving]
