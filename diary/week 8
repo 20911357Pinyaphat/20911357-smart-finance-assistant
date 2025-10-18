@@ -1,1 +1,173 @@
+Entry [1] – [Ask AI to help design the chatbot]
 
+Artifact: [https://colab.research.google.com/drive/12sCYce-C1D15CUYtQTQByJbnNyF2w2ff#scrollTo=8qclf7osSMhX&line=3&uniqifier=1]
+
+Context: [One sentence: to see how AI would help us with the chatbot]
+
+My Prompt: "[from hands_on_ai.chat import get_response
+import os
+print(get_response("Help me design a simple financial advisor chatbot that 1. Takes user questions about personal finance 2. Gives educational advice (not professional financial advice) 3. Can analyze transaction data from a CSV file 4. Has a personality as a 5. wise financial sage What should the basic structure look like in Python?"))]"
+
+AI Response Summary: [AI came up with a long full psuedocode of how to build AI]
+
+My Critique/Improvement: [I can see the general chatbot like a basic example ut it could be the foundation for the project]
+
+Result: [in my project i think it looked similar ]
+
+Reflection: [it is really smart and with good prompts we can make a very cool project]
+
+Entry [2] – [Step 8 ask ai for improvements]
+
+Artifact: [I cant upload photos here]
+Context: [i wanna see if AI can help improve our chatbot]
+
+My Prompt: "[I built a simple financial advisor chatbot that: - Answers financial questions with educational advice - Analyzes CSV transaction data - Combines data analysis with personalized advice How could I improve this chatbot? What features would make it more useful? What are potential issues I should watch out for?]"
+
+AI Response Summary: [AI gave me possible movements and features plus the potential issues]
+
+My Critique/Improvement: [it gave me an idea about creating chatbot to be in a better version]
+
+Result: [I came up with an idea of how i wanted to do my project]
+
+Reflection: [ai collaboration]
+
+Entry [3] – [extend the chatbot]
+
+Artifact: [import os
+import pandas as pd
+from hands_on_ai.chat import get_response
+
+def financial_sage(question: str, personality: str):
+    """
+    A personality bot that provides educational financial guidance with a given personality.
+    """
+    prompt = personality + question
+    return get_response(prompt=prompt)
+
+def analyse_transactions(csv_file):
+    """Analyze user's transaction data"""
+    # Load the data
+    try:
+        df = pd.read_csv(csv_file)
+    except FileNotFoundError:
+        return "Error: Transaction file not found."
+
+    if df.empty:
+        return "No transaction data available for analysis."
+
+    # Basic calculations
+    total_income = df[df['Amount'] > 0]['Amount'].sum()
+    total_expenses = abs(df[df['Amount'] < 0]['Amount'].sum())
+    net_savings = total_income - total_expenses
+    savings_rate = (net_savings / total_income * 100) if total_income > 0 else 0
+
+    # Spending by category
+    expense_by_category = df[df['Amount'] < 0].groupby('Category')['Amount'].sum().abs()
+
+    # Create summary for AI analysis
+    summary = f"""
+Financial Summary:
+- Total Income: ${total_income:.2f}
+- Total Expenses: ${total_expenses:.2f}
+- Net Savings: ${net_savings:.2f}
+- Savings Rate: {savings_rate:.1f}%
+
+Spending by Category:
+{expense_by_category.to_string()}
+"""
+
+    return summary
+
+def get_advice(csv_file, question):
+    """Get advice based on transaction data and user question"""
+
+    # Get transaction analysis
+    analysis = analyse_transactions(csv_file)
+
+    # Combine with user question
+    full_prompt = f"""
+Here's the user's financial data:
+{analysis}
+
+User question: {question}
+
+Based on this financial data, provide personalized educational advice.
+"""
+
+    personality = """
+    You are a wise Financial Sage with years of experience in personal finance.
+    You give educational, general advice about money management, investing, and budgeting.
+    You speak in a friendly but knowledgeable tone.
+    Always remind users that this is educational content, not professional financial advice.
+    """
+
+    advice = financial_sage(full_prompt, personality)
+    return advice
+
+def get_financial_education_tip():
+    """Provides a random financial education tip."""
+    tips = [
+        "Saving even a small amount regularly can add up significantly over time.",
+        "Understanding compound interest is key to long-term wealth building.",
+        "Creating a budget helps you understand where your money is going and identify areas to save.",
+        "An emergency fund can protect you from unexpected expenses and prevent debt.",
+        "Diversifying your investments can help reduce risk.",
+        "It's important to review your financial goals and adjust your plan regularly.",
+        "Paying off high-interest debt should be a priority.",
+        "Understanding your credit score is important for borrowing money in the future."
+    ]
+    import random
+    return random.choice(tips)
+
+
+def full_financial_sage_chatbot():
+    """Interactive chat with the full financial sage"""
+
+    print("💰 Welcome to the Financial Sage! 💰")
+    print("Ask me any financial question, or type 'analyse' to look at your transactions.")
+    print("Type 'tip' for a financial education tip.")
+    print("Type 'quit' to exit.\n")
+
+    personality = """
+    You are a wise Financial Sage with years of experience in personal finance.
+    You give educational, general advice about money management, investing, and budgeting.
+    You speak in a friendly but knowledgeable tone.
+    Always remind users that this is educational content, not professional financial advice.
+    """
+
+    while True:
+        user_input = input("You: ")
+
+        if user_input.lower() == 'quit':
+            print("Sage: May your finances prosper! Goodbye!")
+            break
+        elif user_input.lower() == 'analyse':
+            # Analyze transaction data
+            analysis = analyse_transactions('transactions.csv')
+            print(f"Sage: Here's your financial analysis:\n{analysis}")
+
+            follow_up = input("\nAny questions about your spending? ")
+            if follow_up.strip():
+                advice = get_advice('transactions.csv', follow_up)
+                print(f"Sage: {advice}")
+        elif user_input.lower() == 'tip':
+            tip = get_financial_education_tip()
+            print(f"Sage: Here's a financial tip for you:\n{tip}")
+        else:
+            # Regular financial advice
+            advice = financial_sage(user_input, personality)
+            print(f"Sage: {advice}")
+
+        print()  # Add spacing]
+
+Context: [One sentence: what you were trying to achieve]
+
+My Prompt: "[do you think you will be able to write me a full code and maybe adding the financial education tips too]"
+
+AI Response Summary: [Yes, I can definitely help you with that! I will create a new cell with the full chatbot code, including the financial education tips feature. I will also modify the selected cell to call this new function.]
+
+My Critique/Improvement: [I checked the code and see what i can do to my project]
+
+Result: [sage seems really smart]
+
+Reflection: [business programming]
